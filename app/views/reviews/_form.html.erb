@@ -1,0 +1,92 @@
+<%= form_with(model: review, local: true) do |form| %>
+  <% if review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% review.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id %>
+    <%= form.number_field :id, id: :review_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :currently_work %>
+    <%= form.check_box :currently_work, id: :review_currently_work %>
+  </div>
+
+  <div class="field">
+    <%= form.label :length_months %>
+    <%= form.number_field :length_months, id: :review_length_months %>
+  </div>
+
+  <div class="field">
+    <%= form.label :full_time %>
+    <%= form.check_box :full_time, id: :review_full_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :position_title %>
+    <%= form.text_field :position_title, id: :review_position_title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manager %>
+    <%= form.text_field :manager, id: :review_manager %>
+  </div>
+
+  <div class="field">
+    <%= form.label :insurance %>
+    <%= form.number_field :insurance, id: :review_insurance %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sick_days %>
+    <%= form.number_field :sick_days, id: :review_sick_days %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vacation_days %>
+    <%= form.number_field :vacation_days, id: :review_vacation_days %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hourly_pay %>
+    <%= form.number_field :hourly_pay, id: :review_hourly_pay %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_hours %>
+    <%= form.number_field :average_hours, id: :review_average_hours %>
+  </div>
+
+  <div class="field">
+    <%= form.label :advancement %>
+    <%= form.text_field :advancement, id: :review_advancement %>
+  </div>
+
+  <div class="field">
+    <%= form.label :considered %>
+    <%= form.text_field :considered, id: :review_considered %>
+  </div>
+
+  <div class="field">
+    <%= form.label :support %>
+    <%= form.text_field :support, id: :review_support %>
+  </div>
+
+  <div class="field">
+    <%= form.label :recommend %>
+    <%= form.check_box :recommend, id: :review_recommend %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

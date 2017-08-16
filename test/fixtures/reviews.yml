@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  currently_work: false
+  length_months: 1
+  full_time: false
+  position_title: MyString
+  manager: MyString
+  insurance: 1
+  sick_days: 1
+  vacation_days: 1
+  hourly_pay: 1
+  average_hours: 1
+  advancement: MyString
+  considered: MyString
+  support: MyString
+  recommend: false
+
+two:
+  id: 1
+  currently_work: false
+  length_months: 1
+  full_time: false
+  position_title: MyString
+  manager: MyString
+  insurance: 1
+  sick_days: 1
+  vacation_days: 1
+  hourly_pay: 1
+  average_hours: 1
+  advancement: MyString
+  considered: MyString
+  support: MyString
+  recommend: false

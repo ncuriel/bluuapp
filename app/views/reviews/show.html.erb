@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id:</strong>
+  <%= @review.id %>
+</p>
+
+<p>
+  <strong>Currently work:</strong>
+  <%= @review.currently_work %>
+</p>
+
+<p>
+  <strong>Length months:</strong>
+  <%= @review.length_months %>
+</p>
+
+<p>
+  <strong>Full time:</strong>
+  <%= @review.full_time %>
+</p>
+
+<p>
+  <strong>Position title:</strong>
+  <%= @review.position_title %>
+</p>
+
+<p>
+  <strong>Manager:</strong>
+  <%= @review.manager %>
+</p>
+
+<p>
+  <strong>Insurance:</strong>
+  <%= @review.insurance %>
+</p>
+
+<p>
+  <strong>Sick days:</strong>
+  <%= @review.sick_days %>
+</p>
+
+<p>
+  <strong>Vacation days:</strong>
+  <%= @review.vacation_days %>
+</p>
+
+<p>
+  <strong>Hourly pay:</strong>
+  <%= @review.hourly_pay %>
+</p>
+
+<p>
+  <strong>Average hours:</strong>
+  <%= @review.average_hours %>
+</p>
+
+<p>
+  <strong>Advancement:</strong>
+  <%= @review.advancement %>
+</p>
+
+<p>
+  <strong>Considered:</strong>
+  <%= @review.considered %>
+</p>
+
+<p>
+  <strong>Support:</strong>
+  <%= @review.support %>
+</p>
+
+<p>
+  <strong>Recommend:</strong>
+  <%= @review.recommend %>
+</p>
+
+<%= link_to 'Edit', edit_review_path(@review) %> |
+<%= link_to 'Back', reviews_path %>

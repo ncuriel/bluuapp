@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Reviews</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Currently work</th>
+      <th>Length months</th>
+      <th>Full time</th>
+      <th>Position title</th>
+      <th>Manager</th>
+      <th>Insurance</th>
+      <th>Sick days</th>
+      <th>Vacation days</th>
+      <th>Hourly pay</th>
+      <th>Average hours</th>
+      <th>Advancement</th>
+      <th>Considered</th>
+      <th>Support</th>
+      <th>Recommend</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reviews.each do |review| %>
+      <tr>
+        <td><%= review.id %></td>
+        <td><%= review.currently_work %></td>
+        <td><%= review.length_months %></td>
+        <td><%= review.full_time %></td>
+        <td><%= review.position_title %></td>
+        <td><%= review.manager %></td>
+        <td><%= review.insurance %></td>
+        <td><%= review.sick_days %></td>
+        <td><%= review.vacation_days %></td>
+        <td><%= review.hourly_pay %></td>
+        <td><%= review.average_hours %></td>
+        <td><%= review.advancement %></td>
+        <td><%= review.considered %></td>
+        <td><%= review.support %></td>
+        <td><%= review.recommend %></td>
+        <td><%= link_to 'Show', review %></td>
+        <td><%= link_to 'Edit', edit_review_path(review) %></td>
+        <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Review', new_review_path %>
